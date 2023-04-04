@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <link href="./static/style.css" rel="stylesheet" media="all" type="text/css">
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Classement des scores au jeu du Pendu</h2>
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Score</th>
+            </tr>
+            {{ range $key, $value := .Players}}
+            <tr>
+                <td>{{$key}}</td>
+                <td>{{$value}}</td>
+            </tr>
+            {{ end}}
+        </table>
+        <div class="bouton">
+            <a href="/">Retour à l'accueil</a>
+        </div>
+</body>
+
+</html>

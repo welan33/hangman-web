@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinPage</title>
+    <link href="./static/style.css" rel="stylesheet" media="all" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="title">
+        <div class="win">
+            <p>
+                Bravo tu as gagné le mot était : {{ .MotComplet }}
+            </p>
+        </div>
+    </div>
+    <div class="imgDV">
+        <img src="/assets/coupeVictoire.jpg">
+    </div>
+    <div class="imgGV">
+        <img src="/assets/coupeVictoire.jpg">
+    </div>
+    <div class="marge6"></div>
+    <div class="rules">
+    <button class="btn">{{ .Taunt }} </button>
+    <div class="dropdown">
+        <button class="tamere" style="border-left:1px solid cornflowerblue">
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <form action="/play" method="post">
+                <input id="Difficulty" name="difficulty" type="submit" value="Facile" />
+                </br>
+                <input id="Difficulty" name="difficulty" type="submit" value="Moyen" />
+                </br>
+                <input id="Difficulty" name="difficulty" type="submit" value="Difficile" />
+            </form>
+        </div>
+    </div>
+</div>
+<div class="marge19"></div>
+    <div class="bouton">
+        <a href="/">Retour à l'accueil</a>
+    </div>
+</body>
+
+</html>

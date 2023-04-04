@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Pendu</title>
+    <link href="./static/style.css" rel="stylesheet" media="all" type="text/css">
+</head>
+
+<body>
+<div class="flex">
+    <div class="title">
+        <p>
+            Jeu du pendu
+        </p>
+    </div>
+</div>
+    <br />
+    <div class="flex">
+        <div class="guess">
+            <p>
+                {{ .Mot2 }}
+            </p>
+        </div>
+        <div class="image">
+            <img src={{ .Jose }}>
+        </div>
+    </div>
+    <p>
+    <div class="try">
+        Nombre d'essais : {{ .Essai }}
+    </div>
+    <div class="choice">
+            Choisissez une lettre
+    </div>
+    </p>
+    <div class="input">
+        <form action="/hangman" method="post" autocomplete="off">
+            <input id="inputBox" name="input" type="text" autofocus />
+            <input type="submit" value="Entrer" />
+        </form>
+    </div>
+    <div class="poyo">
+        <p>Lettres déjà utilisées</p>
+    </div>
+        <div class="stock">
+        <p>{{range .Stock}} {{.}} {{end}}</p>
+    </div>
+    </br></br></br>
+    <div class="bouton">
+        <a href="/">Retour à l'accueil</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+.marge6 {
+    padding-top: 6vh;
+}
+
+.marge19 {
+    padding-top: 19vh;
+}
+
+.debug {
+    border: 3px solid black ;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image{
+    position: absolute;
+    right: 1vw;
+    top: 10vh;
+}
+
+.imgG{
+    position: absolute;
+    left: 1vw;
+    top: 15vh;
+}
+
+.imgD{
+    position: absolute;
+    right: 1vw;
+    top: 15vh;
+}
+
+.imgGV{
+    position: absolute;
+    left: 5vw;
+    top: 29vh;
+}
+
+.imgDV{
+    position: absolute;
+    right: 5vw;
+    top: 29vh;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 6vh;
+}
+
+.login {
+    text-align: center;
+}
+
+.guess {
+    text-align: center;
+    font-size: 5vh;
+    border: 3px solid black;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rules {
+    text-align: center;
+    font-size: 3vh;
+}
+
+.choice {
+    padding-left: 30%;
+    font-size: 3vh;
+}
+
+.stock {
+    font-size: 4vh;
+    padding-left: 30%;
+}
+
+.try{
+    padding-left: 30%;
+    font-size: 3vh;
+}
+
+.poyo{
+    font-size: 3vh;
+    padding-left: 30%;
+}
+
+.input {
+    text-align: left;
+    width: 20%;
+    margin-right: 70%;
+    margin-left: 30%;
+}
+
+.test {
+    size: 100px;
+}
+
+.bouton a {
+    font-size: 3vh;
+    display:block;
+    background-color: cornflowerblue;
+    width:180px;
+    line-height:80px;
+    text-align:center;
+    color: whitesmoke;
+    text-decoration:none;
+    margin:2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bouton a:hover {
+    background-color: rgb(123, 164, 240);
+    color: black;
+}
+
+#Difficulty {
+    width: 160px;
+    height: 30px;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+}
+
+#Difficulty:hover {
+    background-color: rgb(123, 164, 240);
+    color: black;
+}
+
+.btn {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 16px;
+    font-size: 3vh;
+    border: none;
+    outline: none;
+}
+
+.tamere {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 16px;
+    font-size: 3vh;
+    border: none;
+    outline: none;
+}
+  
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.btn:hover, .dropdown:hover .btn {
+    background-color: rgb(123, 164, 240);
+    color: black;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+.win {
+    font-size: 6vh;
+    display: block;
+    background-color: #6dcc55;
+    width: 80vh;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loose {
+    font-size: 6vh;
+    display: block;
+    background-color: rgb(204, 44, 44);
+    width: 80vh;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
